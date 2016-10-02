@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Euro Weer</string>
+    <string name="title_activity_weather_detail">Weer in:</string>
+    <string name="tap_to_see_upcoming_reports">Tik op om aanstaande rapporten te zien</string>
+    <string name="degree_format">"%.2f°"</string>
+    <string name="refresh">Vernieuwen</string>
+    <string name="max_temp">Max:</string>
+    <string name="weather">Weer</string>
+    <string name="today_forecast">Verwachting van vandaag</string>
+    <string name="daily_forecast">Daily prognose</string>
+    <string name="error_fetching">Fout bij het ophalen van gegevens.</string>
+    <string name="rond">Rond</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="cancel">Annuleren</string>
+    <string name="save"> Opslaan </string>
+    <string name="language"> Taal </string>
+    <string name="data_updated"> Data succesvol bijgewerkt </string>
+</resources>

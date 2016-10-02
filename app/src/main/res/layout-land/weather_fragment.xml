@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--android:background="#3e555f"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/weather_city_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/relativeLayout2"
+            android:layout_toStartOf="@+id/relativeLayout2"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#565656"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/weather_weather_status_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical|center_horizontal"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textIsSelectable="false"
+            android:textColor="@color/form_text_color"
+            android:textSize="18sp"
+            android:layout_alignRight="@+id/spacer"
+            android:layout_alignEnd="@+id/spacer"
+            android:layout_toRightOf="@+id/weather_icon"
+            android:layout_toEndOf="@+id/weather_icon"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/weather_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/weather"
+            android:layout_marginLeft="105dp"
+            android:layout_marginStart="105dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/weather_city_name"
+            android:layout_alignStart="@+id/weather_city_name" />
+
+
+        <TextView
+            android:id="@+id/weather_weather_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal|right"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/form_text_color"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/weather_icon"
+            android:layout_alignEnd="@+id/weather_icon"
+            android:layout_marginRight="51dp"
+            android:layout_marginEnd="51dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/weather_city_name"
+            android:background="@color/primary"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="8dp"
+            android:text="@string/today_forecast"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFF"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/weather_city_name" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView4"
+            android:layout_toRightOf="@+id/spacer"
+            android:layout_alignBottom="@+id/spacer">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/weather_current_day_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/weather_city_name"
+            android:layout_toLeftOf="@+id/relativeLayout2"
+            android:layout_toStartOf="@+id/relativeLayout2">
+
+            <TextView
+                android:id="@+id/weather_average_heat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="fill_vertical|center_horizontal"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565656"
+                android:textIsSelectable="false"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weather_heat_min_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/weather_average_heat"
+                android:layout_toEndOf="@+id/weather_average_heat"
+                android:layout_toRightOf="@+id/weather_average_heat"
+                android:padding="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#565656"
+                android:textIsSelectable="false"
+                android:textSize="19sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/spacer"
+            android:layout_toRightOf="@+id/spacer">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/weather_daily_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_below="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="8dp"
+                android:text="@string/daily_forecast"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <Space
+            android:id="@+id/spacer"
+            android:layout_width="1px"
+            android:layout_height="1px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2d415f</color>
+    <color name="primary_dark">#223756</color>
+    <color name="primary_light">#1177bd</color>
+    <color name="secondary_light">#1db295</color>
+    <color name="button_primary">#1db295</color>
+    <color name="button_secondary">#1177bd</color>
+    <color name="accent">#bc7c1b</color>
+    <color name="primary_text">#626262</color>
+    <color name="secondary_text">#909090</color>
+    <color name="white">#fff</color>
+    <color name="divider">#D6D6D6</color>
+    <color name="form_text_color">#565656</color>
+    <color name="hint_text_color">#949494</color>
+
+    <color name="thirty_transparent_black">#4d000000</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="accent_secondary">#ec664b</color>
+    <color name="bpTransparent_gray">#7b585858</color>
+
+
+    <color name="chat_backgroudcolor">#f3f2f4</color>
+    <color name="green">#07826A</color>
+    <color name="red">#C13333</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#c2c6c5</color>
+    <color name="dark_gray">#777777</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_profile_bg">#a1a1a1</color>
+    <color name="gray_bg">#d4d4d4</color>
+</resources>
